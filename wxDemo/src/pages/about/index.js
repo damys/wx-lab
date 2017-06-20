@@ -2,7 +2,7 @@ Page({
 	data: {
 		motto: 'Star me', 
 		githubA: 'https://github.com/skyvow/wux', 
-    githubB: 'https://github.com/damys/', 
+    githubB: 'https://github.com/damys/wx-lab', 
 		userInfo: {}
 	},
 	onLoad() {
