@@ -122,6 +122,12 @@ Page({
 				url: '/pages/xnumber/index', 
 				icon: '../../assets/images/iconfont-xnumber.png', 
 			},
+      {
+        title: 'Form',
+        remark: '表单',
+        url: '/pages/from/index',
+        icon: '../../assets/images/iconfont-from.png',
+      },
 		],
 	},
 	modSwitch(e) {
