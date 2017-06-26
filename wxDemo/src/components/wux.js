@@ -40,6 +40,5 @@ export {
 	$wuxRefresher, 
 	$wuxSeats, 
 	$wuxToast, 
-	$wuxToptips, 
-	$wuxXnumber, 
+	$wuxToptips
 }

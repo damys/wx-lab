@@ -21,7 +21,8 @@
     "pages/notification/index",
     "pages/calendar/index",
     "pages/button/index",
-    "pages/about/index"
+    "pages/about/index",
+    "pages/form/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#f7f7f8",
