@@ -125,8 +125,8 @@ Page({
       {
         title: 'Form',
         remark: '表单',
-        url: '/pages/from/index',
-        icon: '../../assets/images/iconfont-from.png',
+        url: '/pages/form/index',
+        icon: '../../assets/images/iconfont-form.png',
       },
 		],
 	},
