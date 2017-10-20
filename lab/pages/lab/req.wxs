@@ -1,0 +1,12 @@
+// 引入
+var tools = require('./tools.wxs');
+
+// 方式1：控制器输出，需要页面引用再会执行
+console.log('req:' + tools.msg)
+console.log('req:' + tools.BAR);
+console.log('req:' + tools.fun("require..."));
+
+// 方式2：分配页面使用
+module.exports = {
+  test:tools
+}

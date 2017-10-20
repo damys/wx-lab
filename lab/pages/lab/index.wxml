@@ -1,0 +1,18 @@
+<!-- wxs 页面 -->
+<wxs module="m1">
+var msg = "hello world";
+
+module.exports.message = msg;
+</wxs>
+<view> {{m1.message}} </view>
+
+
+<!-- wxs 引用外文件 -->
+<wxs src="./tools.wxs" module="tools" />
+<view>{{tools.msg}}</view>
+<view>{{tools.fun(tools.BAR)}}</view>
+
+<!-- require -->
+<wxs src="./req.wxs" module="req"></wxs>
+<!-- 页面使用：需要分配（暴露） module.exports -->
+<view>{{req.test.msg}}</view>
