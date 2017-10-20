@@ -7,14 +7,20 @@
 
 
 <!-- 列表渲染 -->
+<view class='line'>列表渲染</view>
 <view wx:for-items="{{array}}">{{item}}</view>
 <view wx:for-items="{{list}}">{{item.name}}</view>
 
+
 <!-- 自定义写法 -->
+<view class='line'>自定义写法</view>
 <view wx:for="{{list}}">{{index}}:{{item.name}}</view>
 <view wx:for="{{list}}" wx:for-index="idx"  wx:for-item="item" >{{idx}}:{{item.name}}</view>
 
+
+
 <!-- 也可以嵌套，下边是一个九九乘法表 -->
+<view class='line'>也可以嵌套，下边是一个九九乘法表</view>
 <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
   <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
     <view wx:if="{{i <= j}}">
@@ -23,10 +29,15 @@
   </view>
 </view>
 
+
 <!-- 组合: 1234 67 -->
+<view class='line'></view>
 <view wx:for-items="{{[array,6,7]}}">{{item}}</view>
 
+
+
 <!-- 条件渲染, 多个可以使用block包装元素 -->
+<view class='line'></view>
 <view wx:if="{{x>y}}">x>y</view>
 
 <view wx:if="{{view === 'log'}}">log</view>
@@ -36,11 +47,14 @@
 <view hidden="{{flag ? true : false}}">Hidden</view>
 
 
+<view class='line'>checkbox</view>
 <checkbox checked="{{true}}"> </checkbox>
 <checkbox checked="{{false}}"> </checkbox>
 <view>{{x + y}} + {{y}}</view>
 
+
 <!-- template 输出三组-->
+<view class='line'>template 输出三组-</view>
 <template name="staffName">
   <view>
     FirstName: {{firstName}}, LastName: {{lastName}}
@@ -53,11 +67,13 @@
 
 
 <!-- 对象最终组合成输出： foo:1, bar:2 -->
+<view class='line'>对象最终组合成输出： foo:1, bar:2</view>
 <template name="objectCombine1"><view>foo:{{foo}},bar:{{bar}}</view></template>
 <template is="objectCombine1" data="{{foo: x, bar: y}}"></template>
 
 
 <!-- 对象最终组合成输出： foo:my-foo, bar:my-bar -->
+<view class='line'>对象最终组合成输出： foo:my-foo, bar:my-bar</view>
 <template name="objectCombine2">
   <view>foo:{{foo}},bar:{{bar}},ttt:{{ttt}}</view>
 </template>

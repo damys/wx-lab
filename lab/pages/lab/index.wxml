@@ -1,4 +1,5 @@
 <!-- wxs 页面 -->
+<view class='line'>wxs 页面</view>
 <wxs module="m1">
 var msg = "hello world";
 
@@ -8,11 +9,16 @@ module.exports.message = msg;
 
 
 <!-- wxs 引用外文件 -->
+<view class='line'>wxs 引用外文件</view>
 <wxs src="./tools.wxs" module="tools" />
 <view>{{tools.msg}}</view>
 <view>{{tools.fun(tools.BAR)}}</view>
 
+
 <!-- require -->
+<view class='line'>require 引用外文件</view>
 <wxs src="./req.wxs" module="req"></wxs>
+
+
 <!-- 页面使用：需要分配（暴露） module.exports -->
 <view>{{req.test.msg}}</view>

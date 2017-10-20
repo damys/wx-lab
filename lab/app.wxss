@@ -55,3 +55,7 @@ page{
 .other-navigator-hover {
     color:red;
 }
+
+
+
+.line{ border-top: 2px solid #ddd; margin-top: 20rpx; padding-top: 10rpx; color: #1afa29}
