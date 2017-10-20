@@ -1,0 +1,72 @@
+
+{
+  "pages": [
+    "pages/index/index",
+    "pages/flex/index",
+    "pages/lab/index",
+
+    "pages/logs/index",
+    "pages/logs/logs",
+
+    "pages/test/index",
+    "pages/navigate/index",
+    "pages/redirect/index",
+    
+    "example/index",
+    "example/button/button",
+    "example/list/list",
+    "example/input/input",
+    "example/slider/slider",
+    "example/uploader/uploader",
+    "example/article/article",
+    "example/badge/badge",
+    "example/flex/flex",
+    "example/footer/footer",
+    "example/gallery/gallery",
+    "example/grid/grid",
+    "example/icons/icons",
+    "example/loadmore/loadmore",
+    "example/panel/panel",
+    "example/preview/preview",
+    "example/progress/progress",
+    "example/actionsheet/actionsheet",
+    "example/dialog/dialog",
+    "example/msg/msg",
+    "example/msg/msg_success",
+    "example/msg/msg_fail",
+    "example/picker/picker",
+    "example/toast/toast",
+    "example/navbar/navbar",
+    "example/tabbar/tabbar",
+    "example/searchbar/searchbar"
+  ],
+  "window": {
+    "navigationBarTitleText": "Demo"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/test/index",
+        "text": "测试"
+      },
+      {
+        "pagePath": "pages/lab/index",
+        "text": "实验"
+      },
+      
+      {
+        "pagePath": "example/index",
+        "text": "WXUI"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
