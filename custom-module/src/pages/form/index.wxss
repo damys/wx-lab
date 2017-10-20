@@ -1,3 +1,0 @@
-/* pages/form/index.wxss */
-.form{ padding: 0 10px;}
-.form input{  background: #fff; padding: 6px 10px; border-radius: 3px;}
