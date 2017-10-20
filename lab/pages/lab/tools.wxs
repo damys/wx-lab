@@ -1,0 +1,13 @@
+var bar = "'hello world' form to tools.wxs";
+var fun = function(d){
+  return d;
+}
+
+// 调用区别大小写
+module.exports = {
+  BAR: bar,
+  fun:fun
+};
+
+module.exports.msg = "module exports msg";
+

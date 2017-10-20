@@ -1,0 +1,64 @@
+<!--pages/logs/index.wxml-->
+<!-- 数据绑定 -->
+<view>{{page}}</view>
+<view>{{message['id']}}</view>
+<view>hello {{list[0].name}}</view>
+<view bindtap='clickme' id="clickmeId" data-name="clickmeName" >clickme</view>
+
+
+<!-- 列表渲染 -->
+<view wx:for-items="{{array}}">{{item}}</view>
+<view wx:for-items="{{list}}">{{item.name}}</view>
+
+<!-- 自定义写法 -->
+<view wx:for="{{list}}">{{index}}:{{item.name}}</view>
+<view wx:for="{{list}}" wx:for-index="idx"  wx:for-item="item" >{{idx}}:{{item.name}}</view>
+
+<!-- 也可以嵌套，下边是一个九九乘法表 -->
+<view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+    <view wx:if="{{i <= j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view>
+
+<!-- 组合: 1234 67 -->
+<view wx:for-items="{{[array,6,7]}}">{{item}}</view>
+
+<!-- 条件渲染, 多个可以使用block包装元素 -->
+<view wx:if="{{x>y}}">x>y</view>
+
+<view wx:if="{{view === 'log'}}">log</view>
+<view wx:elif="{{view === 'index'}}">index</view>
+<view wx:else="{{view === 'app'}}">app</view>
+
+<view hidden="{{flag ? true : false}}">Hidden</view>
+
+
+<checkbox checked="{{true}}"> </checkbox>
+<checkbox checked="{{false}}"> </checkbox>
+<view>{{x + y}} + {{y}}</view>
+
+<!-- template 输出三组-->
+<template name="staffName">
+  <view>
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+</template>
+
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+
+
+<!-- 对象最终组合成输出： foo:1, bar:2 -->
+<template name="objectCombine1"><view>foo:{{foo}},bar:{{bar}}</view></template>
+<template is="objectCombine1" data="{{foo: x, bar: y}}"></template>
+
+
+<!-- 对象最终组合成输出： foo:my-foo, bar:my-bar -->
+<template name="objectCombine2">
+  <view>foo:{{foo}},bar:{{bar}},ttt:{{ttt}}</view>
+</template>
+<template is="objectCombine2" data="{{foo, bar, ttt:55}}"></template>
