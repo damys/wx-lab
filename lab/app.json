@@ -47,20 +47,28 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页"
+        "text": "Home",
+        "iconPath":"style/temp/home.png",
+        "selectedIconPath":"style/temp/home_selected.png"
       },
       {
         "pagePath": "pages/test/index",
-        "text": "测试"
+        "text": "Test",
+        "iconPath": "style/temp/log.png",
+        "selectedIconPath": "style/temp/log_selected.png"
       },
       {
         "pagePath": "pages/lab/index",
-        "text": "实验"
+        "text": "Lab",
+        "iconPath": "style/temp/lab.png",
+        "selectedIconPath": "style/temp/lab_selected.png"
       },
       
       {
         "pagePath": "example/index",
-        "text": "WXUI"
+        "text": "WeUI",
+        "iconPath": "style/temp/ui.png",
+        "selectedIconPath": "style/temp/ui_selected.png"
       }
     ]
   },
