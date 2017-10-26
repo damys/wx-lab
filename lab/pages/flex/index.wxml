@@ -1,4 +1,6 @@
-  <div class="container">
+<text class="user-motto">{{motto}}</text>
+
+<div class="container">
   <div class="item1"></div>
        <div class="item2"></div>
    <div class="item3"></div> 
