@@ -1,0 +1,42 @@
+<view class="pd20">
+
+
+
+<navigator url="/pages/map/map" hover-class="navigator-hover">
+  <button type='primary'>pages/map/map</button>
+</navigator>
+
+<navigator url="/pages/lab/index" hover-class="navigator-hover">
+  <button type='primary'>pages/lab/index</button>
+</navigator>
+
+<navigator url="/pages/flex/index" hover-class="navigator-hover">
+  <button type='primary'>pages/flex/index</button>
+</navigator>
+
+<navigator url="/pages/logs/index?title=navigate" hover-class="navigator-hover">
+  <button type='primary'>pages/logs/index</button>
+</navigator>
+
+<navigator url="/pages/logs/logs?title=navigate" hover-class="navigator-hover">
+  <button type='primary'>pages/logs/logs</button>
+</navigator>
+
+<navigator url="/pages/test/index?title=navigate" hover-class="navigator-hover">
+  <button type='primary'>pages/test/index</button>
+</navigator>
+
+<navigator url="/pages/navigate/index?title=navigate" hover-class="navigator-hover">
+  <button type='primary'>pages/navigate/index</button>
+</navigator>
+
+<navigator url="/pages/redirect/index?title=navigate" hover-class="navigator-hover">
+  <button type='primary'>pages/redirect/index</button>
+</navigator>
+
+</view>
+
+
+
+
+
