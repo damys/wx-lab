@@ -22,3 +22,27 @@ module.exports.message = msg;
 
 <!-- 页面使用：需要分配（暴露） module.exports -->
 <view>{{req.test.msg}}</view>
+
+
+<view class='line'>引用1: import src="../tpl/template.wxml"</view>
+<!-- 引用1 -->
+<import src="../tpl/template.wxml" />
+
+<!-- 引用2 -->
+<view class='line'>引用2: template , include</view>
+<template is="item" data="{{text:'forbar1'}}" />
+<template is="item" data="{{text:'forbar2'}}" />
+
+<include src="../tpl/header.wxml" />
+<include src="../tpl/footer.wxml" />
+
+
+<!-- 事件冒泡 catchtap -->
+<view class='line'>事件冒泡 catchtap</view>
+<view>
+  <view id='outer' bindtap='handleTap1'>outer handleTap1
+    <view id='middle' catchtap='handleTap2'>middle handleTap2
+      <view id='inner' bindtap='handleTap3'>inner handleTap3</view>
+    </view>
+  </view>
+</view>
