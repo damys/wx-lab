@@ -1,12 +1,14 @@
 
 {
   "pages": [
+    "pages/map/map",
     "pages/index/index",
     "pages/flex/index",
     "pages/lab/index",
-
+    "pages/list/index",
     "pages/logs/index",
     "pages/logs/logs",
+    
 
     "pages/test/index",
     "pages/navigate/index",
@@ -52,8 +54,8 @@
         "selectedIconPath":"style/temp/home_selected.png"
       },
       {
-        "pagePath": "pages/test/index",
-        "text": "Test",
+        "pagePath": "pages/list/index",
+        "text": "List",
         "iconPath": "style/temp/log.png",
         "selectedIconPath": "style/temp/log_selected.png"
       },
