@@ -4,7 +4,6 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -22,11 +21,8 @@ Page({
     console.log(event.data)
   },
 
-  handleTap1: function (event) { console.log('handleTap1')},
-  handleTap2: function (event) { console.log('handleTap2') },
-  handleTap3: function (event) { console.log('handleTap3') },
+  onLoad: function (options) {
 
-  onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

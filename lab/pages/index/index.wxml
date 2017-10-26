@@ -1,8 +1,4 @@
 <!--index.wxml-->
-<!-- 引用1 -->
-<import src="../tpl/template.wxml" />
-<!-- 引用2 -->
-
 
 <view class="container">
   <view class="userinfo">
@@ -12,24 +8,4 @@
       <text u-id="1515" bindtap='getMsgTap' class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-
-<template is="item" data="{{text:'forbar1'}}" />
-<template is="item" data="{{text:'forbar2'}}" />
-
-<include src="../tpl/header.wxml" />
-<include src="../tpl/footer.wxml" />
-
-<!-- 事件冒泡 catchtap -->
-<view>
-  <view id='outer' bindtap='handleTap1'>outer
-    <view id='middle' catchtap='handleTap2'>middle
-      <view id='inner' bindtap='handleTap3'>inner</view>
-    </view>
-  </view>
 </view>
-</view>
-
-
