@@ -1,6 +1,7 @@
 
 {
   "pages": [
+    "pages/python/index",
     "pages/map/map",
     "pages/index/index",
     "pages/flex/index",
