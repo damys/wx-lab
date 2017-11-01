@@ -3,6 +3,7 @@ Page({
     // 使用 wx.createMapContext 获取 map 上下文
     this.mapCtx = wx.createMapContext('myMap')
   },
+
   getCenterLocation: function () {
     this.mapCtx.getCenterLocation({
       success: function (res) {
@@ -11,9 +12,11 @@ Page({
       }
     })
   },
+
   moveToLocation: function () {
     this.mapCtx.moveToLocation()
   },
+
   translateMarker: function () {
     this.mapCtx.translateMarker({
       markerId: 0,
@@ -28,6 +31,7 @@ Page({
       }
     })
   },
+  
   includePoints: function () {
     this.mapCtx.includePoints({
       padding: [10],

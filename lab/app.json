@@ -1,8 +1,8 @@
 
 {
   "pages": [
-    "pages/python/index",
-    "pages/map/map",
+    
+    
     "pages/index/index",
     "pages/flex/index",
     "pages/lab/index",
@@ -10,10 +10,12 @@
     "pages/logs/index",
     "pages/logs/logs",
     
-
     "pages/test/index",
     "pages/navigate/index",
     "pages/redirect/index",
+
+    "pages/python/index",
+    "pages/map/map",
     
     "example/index",
     "example/button/button",
