@@ -1,6 +1,6 @@
 Page({
 
-  getLocation:function(){
+  openLocation:function(){
     wx.getLocation({
       type: 'gcj02',
       success: function (res) {
@@ -10,6 +10,24 @@ Page({
         var accuracy = res.accuracy
 
         console.log(res)
+
+        wx.openLocation({
+          latitude: latitude,
+          longitude: longitude,
+          scale: 28
+        })
+      }
+    })
+  },
+
+  chooseLocation: function () {
+    wx.getLocation({
+      type: 'gcj02',
+      success: function (res) {
+        var latitude = res.latitude
+        var longitude = res.longitude
+        var speed = res.speed
+        var accuracy = res.accuracy
 
         wx.chooseLocation({
           latitude: latitude,
