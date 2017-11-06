@@ -2,7 +2,7 @@ Page({
 
   getLocation:function(){
     wx.getLocation({
-      type: 'wgs84',
+      type: 'gcj02',
       success: function (res) {
         var latitude = res.latitude
         var longitude = res.longitude
@@ -10,6 +10,12 @@ Page({
         var accuracy = res.accuracy
 
         console.log(res)
+
+        wx.chooseLocation({
+          latitude: latitude,
+          longitude: longitude,
+          scale: 28
+        })
       }
     })
   },
