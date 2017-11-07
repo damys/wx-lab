@@ -2,7 +2,7 @@
 {
   "pages": [
     
-    
+    "contact/contact",
     "pages/index/index",
     "pages/flex/index",
     "pages/lab/index",
