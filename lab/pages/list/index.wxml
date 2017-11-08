@@ -1,6 +1,9 @@
 <view class="pd20">
 
 
+<navigator url="/pages/contact/contact" hover-class="navigator-hover">
+  <button type='primary'>pages/contact/contact</button>
+</navigator>
 
 <navigator url="/pages/map/map" hover-class="navigator-hover">
   <button type='primary'>pages/map/map</button>
