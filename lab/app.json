@@ -2,14 +2,14 @@
 {
   "pages": [
     
-    "contact/contact",
+    
     "pages/index/index",
     "pages/flex/index",
     "pages/lab/index",
     "pages/list/index",
     "pages/logs/index",
     "pages/logs/logs",
-    
+    "pages/contact/contact",
     "pages/test/index",
     "pages/navigate/index",
     "pages/redirect/index",
