@@ -1,6 +1,6 @@
-<contact-button 
+
+<contact-button style='width:100%; height:40px; background:#1AAD19; '
   type="default-light" 
-  size="20"
-  session-from="weapp"
->
+  size="24"
+  session-from="weapp">
 </contact-button>
