@@ -1,6 +1,5 @@
-
-<contact-button style='width:40px; height:40px; line-height:40px; padding:2px 10px; text-align:center; background:#1AAD19; '
+<contact-button style='margin:10px auto; display:block; width:100px; height:100px; padding:6px 20px; box-sizing:border-box;  text-align:center; background:#1AAD19; border-radius:100%'
   type="default-light" 
-  size="24"
+  size="28"
   session-from="weapp">
 </contact-button>
