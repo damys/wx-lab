@@ -1,4 +1,4 @@
-<contact-button style='margin:10px auto; display:block; width:100px; height:100px; padding:6px 20px; box-sizing:border-box;  text-align:center; background:#1AAD19; border-radius:100%'
+<contact-button style='margin:10px auto; display:block; width:60px; height:60px; line-height:60px; text-align:center; padding:6px 20px; box-sizing:border-box;  background:#1AAD19; border-radius:100%'
   type="default-light" 
   size="28"
   session-from="weapp">
