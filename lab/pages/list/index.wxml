@@ -9,6 +9,10 @@
   <button type='primary'>pages/map/map</button>
 </navigator>
 
+<navigator url="/pages/view/scroll" hover-class="navigator-hover">
+  <button type='primary'>pages/view/scroll</button>
+</navigator>
+
 <navigator url="/pages/lab/index" hover-class="navigator-hover">
   <button type='primary'>pages/lab/index</button>
 </navigator>
