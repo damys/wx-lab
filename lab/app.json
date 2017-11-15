@@ -15,6 +15,7 @@
     "pages/redirect/index",
 
     "pages/python/index",
+    "pages/view/scroll",
     "pages/map/map",
     
     "example/index",
