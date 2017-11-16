@@ -1,7 +1,7 @@
 .scroll-view-item{ height: 200px;}
 
 .scroll-view_H{ height: 200px; display: flex;flex-direction: row-reverse}
-.scroll-view-item_H{ float: left; width: 375px; height: 100px; background: #ddd;}
+.scroll-view-item_H{ float: left;  height: 100px; background: #ddd;}
 .bc_green{background: green}
 .bc_yellow{background: yellow}
 .bc_red{background: red}
